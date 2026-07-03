@@ -3,5 +3,17 @@
     "name": "python-devcontainer",
     "build": {
         "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode-remote.remote-containers",
+                "ms-azuretools.vscode-containers",
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-python.vscode-python-envs"
+            ]
+        }
     }
 }
