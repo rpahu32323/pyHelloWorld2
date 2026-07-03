@@ -1,8 +1,7 @@
 
 {
     "name": "python-devcontainer",
-    "image": "mcr.microsoft.com/devcontainers/base:debian",
-    "features": {
-        "ghcr.io/devcontainers/features/python:1": {}
+    "build": {
+        "dockerfile": "Dockerfile"
     }
 }
