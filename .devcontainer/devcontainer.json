@@ -4,6 +4,10 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
+
+    "remoteUser": "rpahu",
+    "containerUser": "rpahu",
+   
     "customizations": {
         "vscode": {
             "extensions": [
@@ -12,8 +16,11 @@
                 "ms-python.vscode-pylance",
                 "ms-python.python",
                 "ms-python.debugpy",
-                "ms-python.vscode-python-envs"
+                "ms-python.vscode-python-envs",
+                "rherre86.best-toml",
+                "ms-python.autopep8"
             ]
         }
-    }
+    },
+    "postCreateCommand": "pip install -e ."
 }
