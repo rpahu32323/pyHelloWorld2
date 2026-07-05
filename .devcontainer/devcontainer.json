@@ -1,13 +1,12 @@
 
 {
     "name": "python-devcontainer",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
+
+    "dockerComposeFile": "compose.yml",
+    "service": "pythondev",
 
     "remoteUser": "pydev",
-    "containerUser": "pydev",
-   
+
     "customizations": {
         "vscode": {
             "extensions": [
@@ -22,5 +21,6 @@
             ]
         }
     },
+
     "postCreateCommand": "pip install -e ."
 }

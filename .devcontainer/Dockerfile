@@ -1,13 +1,14 @@
 
 FROM python:3
 
-# Create a non-root user with UID 1000
-ARG USERNAME=pydev
-ARG USER_UID=1000
-ARG USER_GID=$USER_UID
-
+# create a non-root user with UID 1000
+#   catch the related arguments
+ARG USERNAME
+ARG USER_UID
+ARG USER_GID
+#   delete if a usr with UID 1000 user exists
 RUN if id -u $USER_UID ; then userdel `id -un $USER_UID` ; fi
-
+#   add and user and setup sudo
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME -s /bin/bash \
     && apt-get update \
@@ -30,5 +31,5 @@ RUN apt-get autoremove --purge -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Set the default user for the container
+# set the default user for the container
 USER $USERNAME
