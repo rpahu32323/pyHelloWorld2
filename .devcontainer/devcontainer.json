@@ -5,8 +5,8 @@
         "dockerfile": "Dockerfile"
     },
 
-    "remoteUser": "rpahu",
-    "containerUser": "rpahu",
+    "remoteUser": "pydev",
+    "containerUser": "pydev",
    
     "customizations": {
         "vscode": {
