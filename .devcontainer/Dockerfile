@@ -1,4 +1,5 @@
 
+# pull in the python docker image
 FROM python:3
 
 # create a non-root user with UID 1000

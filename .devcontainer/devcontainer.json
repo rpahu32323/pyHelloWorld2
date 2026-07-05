@@ -1,11 +1,13 @@
 
 {
-    "name": "python-devcontainer",
+    "name": "pyHelloWorld2",
 
-    "dockerComposeFile": "compose.yml",
-    "service": "pythondev",
+    "dockerComposeFile": "compose.yaml",
+    "service": "pyhelloworld2",
 
     "remoteUser": "pydev",
+
+    "workspaceFolder": "/workspace/pyHelloWorld",
 
     "customizations": {
         "vscode": {

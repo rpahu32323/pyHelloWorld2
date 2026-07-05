@@ -1,0 +1,22 @@
+
+# the services to start
+services:
+
+  # development container
+  pyhelloworld2:
+
+    # build from the local dockerfile
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - USERNAME=pydev
+        - USER_UID=1000
+        - USER_GID=1000
+
+    # local maching mappings
+    volumes:
+      - ..:/workspace/pyHelloWorld
+
+    # command to keep the container running
+    command: sleep infinity
