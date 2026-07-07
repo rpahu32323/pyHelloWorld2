@@ -5,7 +5,7 @@
     "dockerComposeFile": "compose.yaml",
     "service": "pyhelloworld2",
 
-    "remoteUser": "pydev",
+    "initializeCommand": "echo \"USERNAME=$USER\nUSER_UID=$(id --user $USER)\nUSER_GID=$(id --group $USER)\n\" > .devcontainer/.env",
 
     "workspaceFolder": "/workspace/pyHelloWorld",
 

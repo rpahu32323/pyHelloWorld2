@@ -1,3 +1,8 @@
+
+# dev container files
+.devcontainer/.env
+
+# python buid files
 *.egg-info/
 .eggs/
 build/
