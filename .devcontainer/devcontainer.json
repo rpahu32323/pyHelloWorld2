@@ -10,6 +10,15 @@
     "workspaceFolder": "/workspace/pyHelloWorld",
     
     "customizations": {
+
+        "vscode": {
+            "extensions": [
+                "ms-python.autopep8",
+                "ms-python.python",
+                "tombi-toml.tombi"
+            ]
+        },
+
         "vscodium": {
             "extensions": {
                 "ms-python.autopep8": {},
