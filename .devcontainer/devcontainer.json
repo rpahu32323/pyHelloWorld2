@@ -8,20 +8,14 @@
     "initializeCommand": "echo \"USERNAME=$USER\nUSER_UID=$(id --user $USER)\nUSER_GID=$(id --group $USER)\n\" > .devcontainer/.env",
 
     "workspaceFolder": "/workspace/pyHelloWorld",
-
+    
     "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-vscode-remote.remote-containers",
-                "ms-python.vscode-pylance",
-                "ms-python.python",
-                "ms-python.debugpy",
-                "ms-python.vscode-python-envs",
-                "rherre86.best-toml",
-                "ms-python.autopep8"
-            ]
+        "vscodium": {
+            "extensions": {
+                "ms-python.autopep8": {},
+                "ms-python.python": {},
+                "tombi-toml.tombi": {}
+            }
         }
-    },
-
-    "postCreateCommand": "pip install -e ."
+    }
 }
